@@ -1,0 +1,40 @@
+//DEFINIENDO MEDIA QUERIES
+@mixin xsScreen() {
+    @media only screen and (max-width: 390px){
+        @content;}}
+
+@mixin mobile() {
+    @media only screen and (max-width: 480px){
+        @content;}}
+
+@mixin tablet(){
+    @media only screen and (max-width: 1023px){
+        @content;}}
+
+@mixin desktop(){
+    @media only screen and (min-width: 1024px){
+        @content;}}
+
+//INVOCANDO MEDIA QUERIES
+@include mobile(){}
+@include tablet(){}
+@include desktop(){}
+
+
+
+/* para modificar en scssMain una class según la mediaQueri
+.class {
+    @include mobile{
+        flex-direction: propiedad;
+    }
+}      
+
+
+/*Se puede utilizar metodo similar a function de JavaScript
+MQUERIS>
+    @mixin mediaquery($ancho){ 
+        @content;}
+        
+    MAIN>
+    @include mediaquery(700px){}   */
+

@@ -1,5 +1,36 @@
+@import "mediaQueries";
+@import "variables";
+@import "botones";
+@import "header";
+@import "footer";
 
 
+*{
+    box-sizing:content-box;
+}
+html{
+    height: 100vw;
+    width: 100vw;
+}
+
+body{
+    background-color: #FFFEF4;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: $Black;
+    font-family: "Kanit", sans-serif;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+@include mobile(){}
 
 
 
