@@ -13,14 +13,43 @@
     height: fit-content;
     width: 100%;
     margin: 30px 0 30px 0;
-    padding: 0;
+    padding: 0 30px 0 30px;
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-content: space-evenly;
+    
+
+    @include xsScreen(){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }      
+    @include mobile(){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @include tablet(){  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;}
+    @include desktop(){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 }
     .cajaTextosInicio{
-        font-size: 1.5rem;     
+        @include xsScreen(){
+            font-size: 8px;
+        }      
+        @include mobile(){
+            font-size: 12px;
+        }
+        @include tablet(){  
+            font-size: 16px;
+        }
+        @include desktop(){
+            font-size: 18px;
+        }            
+        
     }
     .botonesCotizacion{
         display: grid;
@@ -28,26 +57,46 @@
         width: 100%;
         justify-self: center;
         justify-content: space-between;
-        align-items: center;}
-
+        align-items: center;
+    }
+        .boton01{
+            @include xsScreen(){
+                font-size: 6px;
+                padding: 0;
+            }      
+            @include mobile(){
+                font-size: 12px;
+                padding: 10px 20px;
+            }
+            @include tablet(){  
+                font-size: 16px;
+                padding: 10px 30px;
+            }
+            @include desktop(){
+                font-size: 18px;
+                padding: 10px 30px;
+            }   
+        }
 
 /*DESTACADOS*/
 .destacadosInicio{
     width: 100%;
-    height: 400px;
-    margin:110px 0 0 0 ;
+    height: fit-content;
+    align-items: center;
+    align-self: center;
+    margin:110px 0 100px 0 ;
     padding: 0 0 0 0 ;
+    display: flex;
+    flex-direction: column;
 }
 
     .subtDestacados{
         justify-content: center;
-        align-items: center;
     }
         .linea{
             position: absolute;
             width: 90vw;
-            height: 2px;
-            background-color: #222222;
+            border-bottom: 2px solid #000000;
             z-index: -1;
             
         }
@@ -63,12 +112,12 @@
     
     
     .carruselDestacados {
-        display: flex;
+        display:flex;
         flex-wrap: wrap;
         padding: 0 30px 0 30px;
         align-items: center;
         justify-content:space-around;
-        width: 100%;
+        width: fit-content;
         margin: 60px 0 0 0;
         z-index: -1;
     }
@@ -78,12 +127,12 @@
         
     }
     .fotoLente{
-        width: 300px;
+        width: fit-content;
+        margin: 10px;
     }
         .fotoLente img{
-            height: 300px;
+            height: 250px;
             border: 1px solid #000000;
-            justify-self: right;
         }
 
 /* VALORACIONES */
@@ -128,7 +177,7 @@
     .valoracion{
         height: 300px ;
         width: fit-content;        
-        margin: 0 20;
+        margin: 0 15px;
     }
     .valoracion img{
         height: 60px;
@@ -143,7 +192,7 @@
             border: 1px solid #000000;
             width: 220px;
             font-size: 1rem;
-            padding: 10px;
+            padding: 20px;
             overflow:hidden;
             text-align:left;            
         }

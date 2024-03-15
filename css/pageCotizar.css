@@ -16,15 +16,16 @@ MQUERIS>
     @include mediaquery(700px){}   */
 .boton01 {
   font-family: "Kanit", sans-serif;
-  width: 180px;
-  height: 50px;
-  padding: 10px 5px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
   font-size: 20px;
   background-color: #80B8B4;
   color: #FFFEF4;
   display: flex;
   justify-content: center;
   text-align: center;
+  line-height: 150%;
   border-radius: 10px;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 10px 10px 0px 0px #000000;
@@ -62,12 +63,12 @@ MQUERIS>
   width: 100%;
   position: static;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .bannerOferta {
     font-weight: 100;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .bannerOferta {
     font-size: 8px;
     font-weight: 200;
@@ -107,12 +108,12 @@ MQUERIS>
   margin: 0;
   height: 30px;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .logoHeader img {
     height: 15px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .logoHeader img {
     height: 18px;
   }
@@ -129,6 +130,7 @@ MQUERIS>
   padding: 10px;
   margin: 0;
 }
+
 .headerMenu li {
   border-right: 1px solid #222222;
   list-style: none;
@@ -138,13 +140,13 @@ MQUERIS>
   padding-right: 10px;
   padding-left: 10px;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .headerMenu li {
     font-size: 10px;
     font-weight: 300;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .headerMenu li {
     font-size: 12px;
     font-weight: 400;
@@ -175,12 +177,12 @@ MQUERIS>
 .iconoCarrito img {
   height: 10px;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .iconoCarrito img {
     height: 10px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .iconoCarrito img {
     height: 10px;
   }
@@ -222,7 +224,7 @@ footer {
   color: #fffef4;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 30px 0px 30px 0px;
 }
@@ -304,12 +306,14 @@ html {
 body {
   background-color: #FFFEF4;
   width: 100vw;
+  max-width: 1920px;
   margin: 0;
   padding: 0;
   width: 100vw;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: #222222;
   font-family: "Kanit", sans-serif;
 }
@@ -319,15 +323,16 @@ body a {
 
 .boton01 {
   font-family: "Kanit", sans-serif;
-  width: 180px;
-  height: 50px;
-  padding: 10px 5px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
   font-size: 20px;
   background-color: #80B8B4;
   color: #FFFEF4;
   display: flex;
   justify-content: center;
   text-align: center;
+  line-height: 150%;
   border-radius: 10px;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 10px 10px 0px 0px #000000;
@@ -351,7 +356,7 @@ footer {
   color: #fffef4;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 30px 0px 30px 0px;
 }
@@ -448,12 +453,12 @@ footer {
   width: 100%;
   position: static;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .bannerOferta {
     font-weight: 100;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .bannerOferta {
     font-size: 8px;
     font-weight: 200;
@@ -493,12 +498,12 @@ footer {
   margin: 0;
   height: 30px;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .logoHeader img {
     height: 15px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .logoHeader img {
     height: 18px;
   }
@@ -515,6 +520,7 @@ footer {
   padding: 10px;
   margin: 0;
 }
+
 .headerMenu li {
   border-right: 1px solid #222222;
   list-style: none;
@@ -524,13 +530,13 @@ footer {
   padding-right: 10px;
   padding-left: 10px;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .headerMenu li {
     font-size: 10px;
     font-weight: 300;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .headerMenu li {
     font-size: 12px;
     font-weight: 400;
@@ -561,12 +567,12 @@ footer {
 .iconoCarrito img {
   height: 10px;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 391px) {
   .iconoCarrito img {
     height: 10px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .iconoCarrito img {
     height: 10px;
   }
@@ -595,27 +601,15 @@ a:hover {
   color: #FFFEF4;
 }
 
-.cuerpoCotizador {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80vw;
-  margin-top: 100px;
-}
-
-.collageCotizador img {
-  height: 1200px;
-  border-radius: 10px;
-  border: 2px solid #000000;
-}
-
 .sectionCotizador {
-  width: 40vw;
-  padding: 0 5vw 0 5vw;
+  align-items: center;
+  width: 100vw;
+  margin-top: 120px;
+  padding: 0 0px 0 60px;
   margin-bottom: 150px;
 }
 
-.sectionCotizador h2 {
+.cuerpoCotizador h2 {
   font-size: 20px;
   font-weight: 600;
 }
@@ -632,6 +626,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 800px;
+  width: 80%;
 }
 
 .formDatosDeReceta {
@@ -642,6 +638,28 @@ a:hover {
   box-shadow: 10px 10px 0 0 #000000;
   border-radius: 10px;
   padding: 0 15px 30px 15px;
+  max-width: 800px;
+  width: 80%;
+}
+@media only screen and (max-width: 391px) {
+  .formDatosDeReceta {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .formDatosDeReceta {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .formDatosDeReceta {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .formDatosDeReceta {
+    font-size: 16px;
+  }
 }
 
 table td {
@@ -665,6 +683,8 @@ thead {
   flex-direction: column;
   align-items: left;
   padding: 0 15px 30px 15px;
+  width: 80%;
+  max-width: 800px;
 }
 
 .inputTipoCristal {
@@ -675,10 +695,13 @@ thead {
 
 .formBotones {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   padding: 60px 0 0 0;
+  height: fit-content;
   justify-content: space-around;
+  width: 80%;
+  max-width: 800px;
 }
 
 .btn {
@@ -687,6 +710,7 @@ thead {
   height: fit-content;
   padding: 5px 10px;
   font-size: 15px;
+  margin: 10px;
   background-color: #80b8b4;
   color: #FFFEF4;
   display: flex;

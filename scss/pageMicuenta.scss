@@ -4,17 +4,21 @@
 @import "header";
 
 .sectionProfile{
-    margin: 80px 0 0 30px;
-    padding: 20px 0 0 30px;
+    margin: 100px 0 0 0px;
+    padding: 20px 0 0 0px;
     width: 90vw;
+    max-width: 1024px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
     .menuProfile{
         background-color:#D6D6D6;
         border: 2px solid #000000;
         border-radius: 10px;
+        margin:0 0 30px 0;
         padding: 10px 30px 30px 10px;
         width: fit-content;
         height: fit-content;
@@ -22,7 +26,21 @@
         flex-direction: column;
         align-items: flex-start;
         box-shadow:  10px 10px 0px 0px #000000;
-    }
+
+        @include xsScreen(){
+            flex-direction: row;
+            padding: 10px;
+        }
+        @include mobile(){
+            flex-direction: row;
+            padding: 10px;
+        }
+        @include tablet(){
+            flex-direction: row;
+            padding: 10px;
+        }
+        @include desktop(){}
+        }
         .menuProfile img{
             height: 30px;
             margin-right: 5px;
@@ -33,9 +51,29 @@
             align-items: center;
             justify-content: space-between;
             width: fit-content;
-            padding: 0px 0 0 px;
-            font-size: 20px;
+            height: fit-content;
+            padding: 0;
             font-weight: 600;
+            p{
+                margin:0;
+            }
+
+            @include xsScreen(){
+                p{font-size: 10px;
+                font-weight: 500;}
+            }
+            @include mobile(){
+                p{ font-size: 10px;
+                font-weight: 500;}
+            }
+            @include tablet(){
+                p{font-size: 20px;
+                font-weight: 500;}
+            }
+            @include desktop(){
+                p{font-size: 20px;
+                font-weight: 600;}
+            }
         }
 
         .navMenuProfile{
@@ -43,11 +81,49 @@
             flex-direction: column;
             font-size: 20px;
             padding: 0 0 0 20px;
+
+            @include xsScreen(){
+                flex-direction: row;
+                font-size: 15px;
+            }
+            @include mobile(){
+                flex-direction: row;
+                font-size: 15px;
+            }
+            @include tablet(){
+                flex-direction: row;
+                font-size: 10px;
+            }
+            @include desktop(){
+                font-size: 20px;
+            }
         }
         .navMenuProfile li{
             list-style: none;
+
+            @include xsScreen(){
+                border-right: 1px solid #222222;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            @include mobile(){
+                border-right: 1px solid #222222;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            @include tablet(){
+                border-right: 1px solid #222222;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            @include desktop(){}
+            
         }
 
+        .navMenuProfile li:last-child {
+            border-right:none;
+            padding-right: 0px;
+        }
         .navMenuProfile a{
             color: #222222;
             text-decoration: none;
@@ -65,15 +141,28 @@
     }   .nombreResumeProfile{
             padding: 0x;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
             width: fit-content;
         }
-            .nombreResumeProfile{
+            .nombreResumeProfile .p{
                 font-size: 45px;
                 font-weight: 500;
                 line-height: 0;
+
+                @include xsScreen(){
+                    font-size: 10px;
+                }
+                @include mobile(){
+                    font-size: 10px;
+                }
+                @include tablet(){
+                    font-size: 30px;
+                }
+                @include desktop(){
+                    font-size: 45px;
+                }
             }
             .nombreResumeProfile img{
             height: 120px;
@@ -109,7 +198,7 @@
         .botonesReceta{
             margin-top: 30px;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
     }
     .btn{
@@ -126,6 +215,7 @@
         border-radius: 10px;
         /* offset-x | offset-y | blur-radius | spread-radius | color */
         box-shadow:  5px 5px 0px 0px #000000;
+        margin: 10px;
         }
         .btn:hover{
             background-color: #625378;

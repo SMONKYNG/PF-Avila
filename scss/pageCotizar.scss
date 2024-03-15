@@ -3,26 +3,16 @@
 @import "footer";
 @import "header";
 
-.cuerpoCotizador{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80vw;
-    margin-top: 100px;
-
-}
-.collageCotizador img{
-    height: 1200px;
-    border-radius: 10px;
-    border: 2px solid #000000;
-}
 .sectionCotizador{
-    width: 40vw;
-    padding: 0 5vw 0 5vw;
+    
+    align-items: center;
+    width: 100vw;
+    margin-top: 120px;
+    padding: 0 0px 0 60px;
     margin-bottom: 150px;
 
 }
-.sectionCotizador h2{
+.cuerpoCotizador h2{
         font-size: 20px;
         font-weight: 600;
 }
@@ -39,6 +29,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 800px;
+            width: 80%;
         }
         .formDatosDeReceta{
             display: flex;
@@ -48,6 +40,21 @@
             box-shadow: 10px 10px 0 0 #000000;
             border-radius: 10px;
             padding: 0 15px 30px 15px;
+            max-width: 800px;
+            width: 80%;
+
+            @include xsScreen{
+                font-size: 9px;
+            }
+            @include mobile{
+                font-size: 12px;
+            }
+            @include tablet{
+                font-size: 16px;
+            }
+            @include desktop{
+                font-size: 16px;
+            }
         }
         table
         td {
@@ -70,6 +77,8 @@
         flex-direction: column;
         align-items: left;
         padding: 0 15px 30px 15px;
+        width: 80%;
+        max-width: 800px;
     }
     .inputTipoCristal{
         display: flex;
@@ -79,10 +88,13 @@
     }
     .formBotones{
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         padding: 60px 0 0 0 ;
+        height: fit-content;
         justify-content: space-around;
+        width: 80%;
+        max-width: 800px;
     }
     .btn{
         font-family: "Kanit", sans-serif;
@@ -90,6 +102,7 @@
         height: fit-content;
         padding: 5px 10px;
         font-size: 15px;
+        margin: 10px;
         background-color: #80b8b4;
         color: #FFFEF4;
         display: flex;
